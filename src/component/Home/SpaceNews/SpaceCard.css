@@ -1,0 +1,16 @@
+.card-description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+
+.card {
+    border: 0.3rem solid rgb(233, 216, 216);
+    border-radius: 25px;
+    box-shadow: 0 2px 2px 4px #515151;
+    transition: box-shadow 0.4s;
+}
+.card:hover{
+    box-shadow: 0 2px 5px 9px #5f5e5e;
+}
