@@ -10,6 +10,7 @@ import { useFormik } from 'formik';
 const Articleform = () => {
 
     const navigate = useNavigate();
+    const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
 
     const formData = {
         coverImage: null,
@@ -26,7 +27,7 @@ const Articleform = () => {
             formData.append('title', values.title);
             formData.append('body', values.body);
 
-            const response = await axios.post('http://localhost:8080/api/article/addnews', formData, {
+            const response = await axios.post(`${BACKEND_URL}/api/article/addnews`, formData, {
                 withcredentials: true
             },);
             // console.log("response from server", response);
