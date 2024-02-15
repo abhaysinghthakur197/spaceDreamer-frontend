@@ -38,7 +38,6 @@ const ArticleCard = ({ allArticle }) => {
                                     {item.coverImageURL && !imgError ? (
                                         <Card.Img
                                             src={item.coverImageURL}
-                                            alt="Article Image"
                                             className='p-1'
                                             style={{ borderRadius: '15px' }}
                                             onError={handleImgError}
@@ -46,7 +45,6 @@ const ArticleCard = ({ allArticle }) => {
                                     ) : (
                                         <Card.Img
                                             src={DefaultCardImg}
-                                            alt="Default Image"
                                             className='p-1'
                                             style={{ borderRadius: '15px' }}
                                         />
