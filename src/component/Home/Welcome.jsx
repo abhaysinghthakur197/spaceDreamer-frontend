@@ -30,7 +30,7 @@ const Welcome = () => {
                     </Col>
                     <Col md={6} className='text-center'>
                         <div className="image-container">
-                            <img src={process.env.PUBLIC_URL + "/welcomeImg.gif"} alt="Welcome GIF" className='img-fluid' width={400} height={400} />
+                            <img src={process.env.PUBLIC_URL + "/welcomeImg.gif"} className='img-fluid' width={400} height={400} />
                         </div>
                     </Col>
                 </Row>
