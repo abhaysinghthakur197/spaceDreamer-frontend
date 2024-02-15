@@ -21,6 +21,7 @@ const MyNavbar = () => {
   const handleLogout = async () => {
     try {
       const response = await axios.get('http://localhost:8080/api/user/logout', { withCredentials: true });
+      console.log(response)
       window.location.reload()
     }
     catch (error) {
@@ -36,12 +37,12 @@ const MyNavbar = () => {
         width="100"
         height="50"
         className="d-inline-block align-top mx-5"
-        alt="Space Dreamer"
+        
       /></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNavbar}>
         <img
           src={process.env.PUBLIC_URL + './menu-icon.png'}
-          alt="Menu"
+          
           style={{ width: '30px', height: '30px' }}
           className={isToggled ? 'd-inline-block align-top rotated' : 'd-inline-block align-top'}
         />
