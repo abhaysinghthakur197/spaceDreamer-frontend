@@ -6,7 +6,7 @@ import './SpaceCard.css'
 
 
 const SpaceCard = ({ news }) => {
-    console.log("NEWS", news);
+   // console.log("NEWS", news);
 
     return (
         <Container className="py-5">
