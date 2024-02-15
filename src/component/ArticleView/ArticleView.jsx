@@ -28,14 +28,14 @@ const ArticleView = () => {
                         {article.coverImageURL && !imgError ? (
                             <img
                                 src={article.coverImageURL}
-                                alt="blog image"
+                                alt="blog"
                                 className='w-75'
                                 onError={handleImgError}
                             />
                         ) : (
                             <img
                                 src={DefaultCardImg}
-                                alt="blog image"
+                                alt="blog"
                                 className='w-75'
                             />
                         )}
