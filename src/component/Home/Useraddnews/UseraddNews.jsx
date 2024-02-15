@@ -7,7 +7,7 @@ const UseraddNews = () => {
 
     const [alldata, setalldata] = useState([]);
     const [showLogo, setShowLogo] = useState(true);
-
+    const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
 
     useEffect(() => {
         fetchDate();
@@ -20,7 +20,7 @@ const UseraddNews = () => {
 
     const fetchDate = async () => {
         try {
-            await axios.get('http://localhost:8080/api/').then(response => {
+            await axios.get(`${BACKEND_URL}/api/`).then(response => {
                 console.log("all articles by users", response)
                 setalldata(response.data)
             })
