@@ -21,6 +21,7 @@ const MyNavbar = () => {
   const handleLogout = async () => {
     try {
       const response = await axios.get('http://localhost:8080/api/user/logout', { withCredentials: true });
+      console.log(response)
       window.location.reload()
     }
     catch (error) {
