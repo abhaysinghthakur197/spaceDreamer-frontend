@@ -11,7 +11,6 @@ const ArticleCard = ({ allArticle }) => {
 
     // const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
     const [imgError, setImgError] = useState(false);
-    const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
     const navigate = useNavigate();
 
     const handleImgError = () => {
@@ -20,11 +19,7 @@ const ArticleCard = ({ allArticle }) => {
 
     const handleView = async (_id) => {
         try {
-<<<<<<< HEAD
             const response = await axios.get(`http://localhost:8000/api/article/${_id}`);
-=======
-            const response = await axios.get(`${BACKEND_URL}/api/article/${_id}`);
->>>>>>> 76637242c49d5e83c0983489d9cf2540247a1595
             const specificArticle = response.data.getArticle;
             navigate(`/article/${_id}`, { state: specificArticle });
         } catch (err) {
@@ -44,10 +39,7 @@ const ArticleCard = ({ allArticle }) => {
                                     {item.coverImageURL && !imgError ? (
                                         <Card.Img
                                             src={item.coverImageURL}
-<<<<<<< HEAD
                                             alt="cardhead"
-=======
->>>>>>> 76637242c49d5e83c0983489d9cf2540247a1595
                                             className='p-1'
                                             style={{ borderRadius: '15px' }}
                                             onError={handleImgError}
@@ -55,10 +47,7 @@ const ArticleCard = ({ allArticle }) => {
                                     ) : (
                                         <Card.Img
                                             src={DefaultCardImg}
-<<<<<<< HEAD
                                             alt="cardhead"
-=======
->>>>>>> 76637242c49d5e83c0983489d9cf2540247a1595
                                             className='p-1'
                                             style={{ borderRadius: '15px' }}
                                         />
@@ -84,7 +73,7 @@ const ArticleCard = ({ allArticle }) => {
                                     {item.coverImageURL && !imgError ? (
                                         <Card.Img
                                             src={item.coverImageURL}
-                                            alt="Article Image"
+                                            alt="Article"
                                             className='p-1'
                                             style={{ borderRadius: '15px' }}
                                             onError={handleImgError}
@@ -92,7 +81,7 @@ const ArticleCard = ({ allArticle }) => {
                                     ) : (
                                         <Card.Img
                                             src={DefaultCardImg}
-                                            alt="Default Image"
+                                            alt="Default"
                                             className='p-1'
                                             style={{ borderRadius: '15px' }}
                                         />
