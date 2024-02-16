@@ -12,7 +12,6 @@ const MyNavbar = () => {
   // const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
 
   const { username } = useAuth();
-  const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
 
   const [isToggled, setIsToggled] = useState(false);
 
@@ -22,11 +21,7 @@ const MyNavbar = () => {
 
   const handleLogout = async () => {
     try {
-<<<<<<< HEAD
       const response = await axios.get('http://localhost:8000/api/user/logout', { withCredentials: true });
-=======
-      const response = await axios.get(`${BACKEND_URL}/api/user/logout`, { withCredentials: true });
->>>>>>> 76637242c49d5e83c0983489d9cf2540247a1595
       console.log(response)
       window.location.reload()
     }
