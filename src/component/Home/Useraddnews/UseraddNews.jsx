@@ -8,7 +8,6 @@ const UseraddNews = () => {
     // const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
     const [alldata, setalldata] = useState([]);
     const [showLogo, setShowLogo] = useState(true);
-    const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
 
     useEffect(() => {
         fetchDate();
@@ -21,16 +20,12 @@ const UseraddNews = () => {
 
     const fetchDate = async () => {
         try {
-<<<<<<< HEAD
             await axios.get('http://localhost:8000/api').then(response => {
-=======
-            await axios.get(`${BACKEND_URL}/api`).then(response => {
->>>>>>> 76637242c49d5e83c0983489d9cf2540247a1595
                 console.log("all articles by users", response)
                 setalldata(response.data)
             })
         } catch (e) {
-            alert("Error while laoding the data");
+            alert("Error while loading the data");
         }
     }
     // console.log(alldata)
