@@ -20,7 +20,7 @@ const UseraddNews = () => {
 
     const fetchDate = async () => {
         try {
-            await axios.get(`${BACKEND_URL}/api/`).then(response => {
+            await axios.get(`${BACKEND_URL}/api`).then(response => {
                 console.log("all articles by users", response)
                 setalldata(response.data)
             })
