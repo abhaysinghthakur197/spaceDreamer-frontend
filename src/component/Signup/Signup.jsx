@@ -16,7 +16,6 @@ const Login = () => {
         color: 'white', // Set text color to be readable against the background
         padding: '100px 0', // Adjust padding as needed
     };
-<<<<<<< HEAD
 
     // const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
 
@@ -35,7 +34,6 @@ const Login = () => {
             // console.log("form values", values);
             try {
                 const response = await axios.post('http://localhost:8000/api/user/signup', values)
-
                 console.log("response", response); 
                 if(response.status === 200){
                     alert("Congrats! You are now a *Space Dreamer*")
