@@ -17,6 +17,8 @@ const Login = () => {
         padding: '100px 0', // Adjust padding as needed
     };
 
+    // const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
+
     const navigate = useNavigate();
 
     const formData = {
@@ -31,7 +33,7 @@ const Login = () => {
         onSubmit: async (values, action) => {
             // console.log("form values", values);
             try {
-                const response = await axios.post('http://localhost:8080/api/user/signup', values)
+                const response = await axios.post('http://localhost:8000/api/user/signup', values)
                 console.log("response", response); 
                 if(response.status === 200){
                     alert("Congrats! You are now a *Space Dreamer*")

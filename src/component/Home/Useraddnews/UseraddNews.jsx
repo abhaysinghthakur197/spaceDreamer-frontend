@@ -5,6 +5,7 @@ import ArticleCard from './ArticleCard';
 
 const UseraddNews = () => {
 
+    // const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
     const [alldata, setalldata] = useState([]);
     const [showLogo, setShowLogo] = useState(true);
 
@@ -20,7 +21,7 @@ const UseraddNews = () => {
 
     const fetchDate = async () => {
         try {
-            await axios.get('http://localhost:8080/api/').then(response => {
+            await axios.get('http://localhost:8000/api').then(response => {
                 console.log("all articles by users", response)
                 setalldata(response.data)
             })

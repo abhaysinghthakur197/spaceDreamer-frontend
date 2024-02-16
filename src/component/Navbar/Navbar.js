@@ -9,6 +9,8 @@ import axios from 'axios';
 
 const MyNavbar = () => {
 
+  // const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
+
   const { username } = useAuth();
 
   const [isToggled, setIsToggled] = useState(false);
@@ -17,10 +19,9 @@ const MyNavbar = () => {
     setIsToggled(!isToggled);
   }
 
-
   const handleLogout = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/api/user/logout', { withCredentials: true });
+      const response = await axios.get('http://localhost:8000/api/user/logout', { withCredentials: true });
       console.log(response)
       window.location.reload()
     }
@@ -34,6 +35,7 @@ const MyNavbar = () => {
     <Navbar expand="lg" fixed="top" style={{ margin: 0, padding: 0 }} className='h-5'>
       <Navbar.Brand href='#'><img
         src={process.env.PUBLIC_URL + './Logo.png'}
+        alt='logo'
         width="100"
         height="50"
         className="d-inline-block align-top mx-5"
@@ -42,7 +44,7 @@ const MyNavbar = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleNavbar}>
         <img
           src={process.env.PUBLIC_URL + './menu-icon.png'}
-          
+          alt='menu'
           style={{ width: '30px', height: '30px' }}
           className={isToggled ? 'd-inline-block align-top rotated' : 'd-inline-block align-top'}
         />
