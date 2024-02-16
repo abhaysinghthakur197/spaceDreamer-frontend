@@ -10,7 +10,11 @@ import { useFormik } from 'formik';
 const Articleform = () => {
 
     const navigate = useNavigate();
+<<<<<<< HEAD
     // const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
+=======
+    const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
+>>>>>>> 76637242c49d5e83c0983489d9cf2540247a1595
 
     const formData = {
         coverImage: null,
@@ -27,7 +31,11 @@ const Articleform = () => {
             formData.append('title', values.title);
             formData.append('body', values.body);
 
+<<<<<<< HEAD
             const response = await axios.post('http://localhost:8000/api/article/addnews', formData, {
+=======
+            const response = await axios.post(`${BACKEND_URL}/api/article/addnews`, formData, {
+>>>>>>> 76637242c49d5e83c0983489d9cf2540247a1595
                 withcredentials: true
             },);
             // console.log("response from server", response);
