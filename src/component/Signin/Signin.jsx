@@ -19,7 +19,7 @@ const Login = () => {
     };
    
 
-    // const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
+    const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
 
     const { login } = useAuth();
 
@@ -36,7 +36,7 @@ const Login = () => {
         onSubmit: async (values,action) => {
             // console.log("Login values", values);
             try {
-                const response  = await axios.post('http://localhost:8000/api/user/signin', values, { withCredentials: true });
+                const response  = await axios.post(`${BACKEND_URL}/api/user/signin`, values, { withCredentials: true });
                 if(response.status === 200){
                     login(response.data.user.username);
                     alert(`Your login successful!!! ${response.data.user.username}`);
