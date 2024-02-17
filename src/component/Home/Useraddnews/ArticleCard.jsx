@@ -9,7 +9,7 @@ import DefaultCardImg from '../../../assets/Useraddnews_default.jpg'
 const ArticleCard = ({ allArticle }) => {
 
 
-    // const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
+    const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
     const [imgError, setImgError] = useState(false);
     const navigate = useNavigate();
 
@@ -19,7 +19,7 @@ const ArticleCard = ({ allArticle }) => {
 
     const handleView = async (_id) => {
         try {
-            const response = await axios.get(`http://localhost:8000/api/article/${_id}`);
+            const response = await axios.get(`${BACKEND_URL}/api/article/${_id}`);
             const specificArticle = response.data.getArticle;
             navigate(`/article/${_id}`, { state: specificArticle });
         } catch (err) {
