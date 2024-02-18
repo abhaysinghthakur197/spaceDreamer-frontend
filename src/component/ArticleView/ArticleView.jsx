@@ -39,8 +39,8 @@ const ArticleView = () => {
                                 className='w-75'
                             />
                         )}
-                        <h1 className='text-white mt-5 pt-5'>{article.title}</h1>
-                        <p className='text-white mt-2 pt-5'>{article.body}</p>
+                        <h1 className='text-white mt-5 pt-5 px-4'>{article.title}</h1>
+                        <p className='text-white mt-2 pt-5 px-4'>{article.body}</p>
                     </div>
                 ) : (
                     <p> Loading </p>
