@@ -9,10 +9,9 @@ import axios from 'axios';
 
 const MyNavbar = () => {
 
-  // const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
+  const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
 
   const { username } = useAuth();
-  const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
 
   const [isToggled, setIsToggled] = useState(false);
 

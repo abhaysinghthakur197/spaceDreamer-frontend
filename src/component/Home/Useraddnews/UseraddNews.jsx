@@ -5,10 +5,9 @@ import ArticleCard from './ArticleCard';
 
 const UseraddNews = () => {
 
-    // const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
+    const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
     const [alldata, setalldata] = useState([]);
     const [showLogo, setShowLogo] = useState(true);
-    const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
 
     useEffect(() => {
         fetchDate();
@@ -26,7 +25,7 @@ const UseraddNews = () => {
                 setalldata(response.data)
             })
         } catch (e) {
-            alert("Error while laoding the data");
+            alert("Error while loading the data");
         }
     }
     // console.log(alldata)

@@ -9,9 +9,8 @@ import DefaultCardImg from '../../../assets/Useraddnews_default.jpg'
 const ArticleCard = ({ allArticle }) => {
 
 
-    // const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
-    const [imgError, setImgError] = useState(false);
     const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
+    const [imgError, setImgError] = useState(false);
     const navigate = useNavigate();
 
     const handleImgError = () => {
@@ -74,7 +73,7 @@ const ArticleCard = ({ allArticle }) => {
                                     {item.coverImageURL && !imgError ? (
                                         <Card.Img
                                             src={item.coverImageURL}
-                                            alt="Article Image"
+                                            alt="Article"
                                             className='p-1'
                                             style={{ borderRadius: '15px' }}
                                             onError={handleImgError}
@@ -82,7 +81,7 @@ const ArticleCard = ({ allArticle }) => {
                                     ) : (
                                         <Card.Img
                                             src={DefaultCardImg}
-                                            alt="Default Image"
+                                            alt="Default"
                                             className='p-1'
                                             style={{ borderRadius: '15px' }}
                                         />
