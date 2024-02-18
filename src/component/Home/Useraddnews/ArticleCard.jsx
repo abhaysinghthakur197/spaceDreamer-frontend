@@ -35,7 +35,7 @@ const ArticleCard = ({ allArticle }) => {
                     <Carousel.Item key={item._id}>
                         <Row className="g-0" xs={1} md={2} lg={3}>
                             <Col>
-                                <Card style={{ width: "25rem" }} className='border-warning border-3 bg-dark w-100'>
+                                <Card style={{ width: "25rem" }} className='border-warning border-3 bg-dark'>
                                     {item.coverImageURL && !imgError ? (
                                         <Card.Img
                                             src={item.coverImageURL}
