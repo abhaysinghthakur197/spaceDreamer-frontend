@@ -28,22 +28,14 @@ const ArticleView = () => {
                         {article.coverImageURL && !imgError ? (
                             <img
                                 src={article.coverImageURL}
-<<<<<<< HEAD
                                 alt='coverhead'
-=======
-                                alt="blog"
->>>>>>> 6c1b56e87a573ee762319717a019b482544cab17
                                 className='w-75'
                                 onError={handleImgError}
                             />
                         ) : (
                             <img
                                 src={DefaultCardImg}
-<<<<<<< HEAD
                                 alt='coverhead'
-=======
-                                alt="blog"
->>>>>>> 6c1b56e87a573ee762319717a019b482544cab17
                                 className='w-75'
                             />
                         )}
