@@ -29,7 +29,7 @@ const ArticleCard = ({ allArticle }) => {
     }
 
     return (
-        <div className='container'>
+        <div className='container d-flex align-items-center justify-content-center'>
             <Carousel controls={false}>
                 {allArticle.map((item) => (
                     <Carousel.Item key={item._id}>
