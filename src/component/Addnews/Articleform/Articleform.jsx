@@ -10,13 +10,8 @@ import { useFormik } from 'formik';
 const Articleform = () => {
 
     const navigate = useNavigate();
-<<<<<<< HEAD
-    const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
-=======
-
     const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
 
->>>>>>> 6c1b56e87a573ee762319717a019b482544cab17
 
     const formData = {
         coverImage: null,
