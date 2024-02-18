@@ -6,10 +6,6 @@ import './SpaceCard.css'
 
 
 const SpaceCard = ({ news }) => {
-<<<<<<< HEAD
-    // console.log("NEWS", news);
-=======
->>>>>>> 6c1b56e87a573ee762319717a019b482544cab17
 
     return (
         <Container className="py-5">
