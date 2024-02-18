@@ -20,11 +20,7 @@ const ArticleCard = ({ allArticle }) => {
 
     const handleView = async (_id) => {
         try {
-<<<<<<< HEAD
-            const response = await axios.get(`http://localhost:8000/api/article/${_id}`);
-=======
             const response = await axios.get(`${BACKEND_URL}/api/article/${_id}`);
->>>>>>> 76637242c49d5e83c0983489d9cf2540247a1595
             const specificArticle = response.data.getArticle;
             navigate(`/article/${_id}`, { state: specificArticle });
         } catch (err) {
@@ -40,14 +36,11 @@ const ArticleCard = ({ allArticle }) => {
                     <Carousel.Item key={item._id}>
                         <Row className="g-0" xs={1} md={2} lg={3}>
                             <Col>
-                                <Card style={{ width: "25rem" }} className='border-warning border-3 bg-dark'>
+                                <Card style={{ width: "25rem" }} className='border-warning border-3 bg-dark w-100'>
                                     {item.coverImageURL && !imgError ? (
                                         <Card.Img
                                             src={item.coverImageURL}
-<<<<<<< HEAD
                                             alt="cardhead"
-=======
->>>>>>> 76637242c49d5e83c0983489d9cf2540247a1595
                                             className='p-1'
                                             style={{ borderRadius: '15px' }}
                                             onError={handleImgError}
@@ -55,10 +48,7 @@ const ArticleCard = ({ allArticle }) => {
                                     ) : (
                                         <Card.Img
                                             src={DefaultCardImg}
-<<<<<<< HEAD
                                             alt="cardhead"
-=======
->>>>>>> 76637242c49d5e83c0983489d9cf2540247a1595
                                             className='p-1'
                                             style={{ borderRadius: '15px' }}
                                         />

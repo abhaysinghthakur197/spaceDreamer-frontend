@@ -17,7 +17,6 @@ code {
   display: block;
    padding: 1rem;
    margin: 0.2rem;
-   border-radius: 5px;
    background-color: #050505;
    /* border: 2px solid red; */
  }
@@ -29,194 +28,13 @@ code {
    margin-left: 40px;
  }
  
- nav .nav-list {
-   /* border: 2px solid red; */
-   list-style: none;
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
- }
 
- .nav-list li {
-   margin: 5px;
- }
- .link {
-   font-size: 2.3vh;
-   font-weight: bold;
-   text-decoration: none;
-   color: #ffffff;
-   letter-spacing: 1px;
-   transition: color 1.6s font-size 1.6s;
- }
- .link:hover {
- color: rgb(101, 101, 94);
- font-size: 1.39rem;
- }
 /* Loading img */
 .Loading_img {
-
 display: block;
 margin-left: auto;
 margin-right: auto;
 width: 20%;
-
 }
 
- /* SpaceCard css */
- .space_card {
-  display: block;
-  background-color:#faf4f4;
-  border: 0.045rem solid rgb(255, 252, 252);
-  border-radius: 25px;
-  padding: 56px;
-  margin: 56px;
-  /* animation: mymove 5s infinite; */
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
-  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
-}
-@keyframes mymove {
-  50% {box-shadow: 10px 20px 30px red;}
-}
 
-.news_box_p{
-font-size: 2rem;
-font-family: 'Abril Fatface', cursive;
-font-weight: bold;
-text-decoration: underline;
-text-decoration-color: red;
-
-}
-.style_card.card {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  border: 3px solid rgb(233, 216, 216);
-  border-radius: 25px;
-  box-shadow: 0 2px 2px 4px #faf4f4;
-  transition: box-shadow 0.4s;
-  overflow: hidden;      
-}
-.style_card.card:hover{
-  box-shadow: 0 5px 5px 9px #c3b6b6;
-}
-.card_wrap--outer {
-  display: flex;
-  row-gap: 40px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  /* border: 2px solid black;   */
-}
-
-.flexible {
-  flex-grow: 2;
-}
-.card_wrap--inner{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  /* border: 2px solid blue; */
-  justify-content: center;
-}
-.card-img {
-  width: auto;
-  height: 28vh;
-}
-.card-title {
-  font-family: 'Times New Roman', Times, serif;
-  /* border: 3px solid red; */
-}
-.card-summary {
-  font-size: 1rem;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.date
-{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* border: 1px solid blue; */
-  margin: 10px 10px 10px 2px;
-  padding: 5px 5px 5px 0;
-}
-.card_date{
-  font-size: 1vw;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.card_button {
-  align-items: center;
-  appearance: none;
-  background-color: #05051c;
-  border-radius: 4px;
-  border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-  box-sizing: border-box;
-  color: #e6e6ec;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
-  height: 48px;
-  justify-content: center;
-  line-height: 1;
-  list-style: none;
-  overflow: hidden;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  will-change: box-shadow,transform;
-  font-size: 18px;
-}
-
-.card_button:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-}
-
-.card_button:hover {
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  transform: translateY(-2px);
-}
-
-.card_button:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
-  transform: translateY(2px);
-}
-
-/* welcome css */
-.row {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.welcome-container {
-  height: auto;
-  width: auto;
-  /* border: 2px solid red; */
-  padding: 60px;
-}
-.heading { 
-  font-family: 'Abril Fatface', cursive;
-  font-size: 10vh;
-  text-align: center;
-  
-}
-.welcome-left span {
-  font-weight: bold;
-}
-
-.image {
-   /* Pushes the image to the right */
-  height: 35em;
-  width: 45em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}

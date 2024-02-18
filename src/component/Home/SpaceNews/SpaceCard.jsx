@@ -6,19 +6,14 @@ import './SpaceCard.css'
 
 
 const SpaceCard = ({ news }) => {
-<<<<<<< HEAD
     // console.log("NEWS", news);
-=======
-   // console.log("NEWS", news);
->>>>>>> 76637242c49d5e83c0983489d9cf2540247a1595
 
     return (
         <Container className="py-5">
-
             <Row xs={1} md={2} lg={3}>
                 {news.map((item, index) => (
                     <Col key={index} className="px-4 py-y mb-5 ml-2">
-                        <Card style={{ width: "25rem"}} className="border-warning border-2 bg-dark" >
+                        <Card style={{ width: "25rem"}} className="border-warning border-2 bg-dark w-100" >
                             <Card.Img variant="top" src={item.imageUrl} alt={item.altText} className="p-1" style={{ borderRadius: '15px', height: '200px' }} />
                             <Card.Body>
                                 <Card.Title className="text-white">{item.title}</Card.Title>

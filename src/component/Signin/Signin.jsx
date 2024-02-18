@@ -19,7 +19,7 @@ const Login = () => {
     };
     const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
 
-    // const BACKEND_URL = 'https://spacedreamer-backend.onrender.com'
+    
 
     const { login } = useAuth();
 
@@ -36,11 +36,7 @@ const Login = () => {
         onSubmit: async (values,action) => {
             // console.log("Login values", values);
             try {
-<<<<<<< HEAD
-                const response  = await axios.post('http://localhost:8000/api/user/signin', values, { withCredentials: true });
-=======
                 const response  = await axios.post(`${BACKEND_URL}/api/user/signin`, values, { withCredentials: true });
->>>>>>> 76637242c49d5e83c0983489d9cf2540247a1595
                 
                 if(response.status === 200){
                     login(response.data.user.username);
@@ -56,8 +52,8 @@ const Login = () => {
     })
     return (
         <Container style={sectionStyle}>
-            <div className='d-flex align-items-center justify-content-center vh-100'>
-                <Card style={{ width: '38rem' }} bg="black" className='border-warning border-3 bg-dark'>
+            <div className='d-flex align-items-center justify-content-center vh-100 '>
+                <Card  className='border-warning border-3 bg-dark w-75 w-md-auto' style={{ maxWidth: '38rem' }} bg="black">
                     <Card.Body>
                         <Card.Title className='text-center text-white text-decoration-underline' style={{ fontWeight: 'bolder', fontFamily: 'Helvetica, Arial, sans-serif', color: '#834651', fontSize: '2.6rem' }}>Log <span className='text-warning'>In</span></Card.Title>
                         <p className='text-center text-white'>Log In to feel the zero gravity!!!</p>
