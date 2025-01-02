@@ -12,14 +12,14 @@ const SpaceCard = ({ news }) => {
             <Row xs={1} md={2} lg={3}>
                 {news.map((item, index) => (
                     <Col key={index} className="px-4 py-y mb-5 ml-2">
-                        <Card style={{ width: "25rem"}} className="border-warning border-2 bg-dark w-100" >
-                            <Card.Img variant="top" src={item.imageUrl} alt={item.altText} className="p-1" style={{ borderRadius: '15px', height: '200px' }} />
+                        <Card style={{ width: "25rem"}} className="border-warning border-2 bg-dark" >
+                            <Card.Img variant="top" src={item.image_url} alt={item.altText} className="p-1" style={{ borderRadius: '15px', height: '200px' }} />
                             <Card.Body>
                                 <Card.Title className="text-white">{item.title}</Card.Title>
                                 <Card.Text className="text-white">{moment(item.publishedAt).format("dddd, MMMM Do, YYYY")}</Card.Text>
                                 <Card.Text className="card-description text-white">{truncateDescription(item.summary)}</Card.Text>
                                 <a href={item.url} target="_blank" rel="noopener noreferrer">
-                                    <Button variant='outline-light'>{item.newsSite}</Button>
+                                    <Button variant='outline-light'>{item.news_site}</Button>
                                 </a>
                             </Card.Body>
                         </Card>
