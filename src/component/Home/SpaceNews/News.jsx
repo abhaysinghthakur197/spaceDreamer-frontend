@@ -18,7 +18,7 @@ const Spaceapi = () => {
             try {
                 setTimeout(function () {
                 }, 20000);
-                const res = await axios.get("https://api.spaceflightnewsapi.net/v3/articles");
+                const res = await axios.get("https://api.spaceflightnewsapi.net/v4/articles");
                 setNews(res.data);
             } catch (err) {
                 console.log("Error fetching data");
