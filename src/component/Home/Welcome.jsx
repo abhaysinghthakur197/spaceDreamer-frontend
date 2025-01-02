@@ -36,9 +36,9 @@ const Welcome = () => {
                 </Row>
             </Container>
 
-            <div>
+{/*             <div>
                 <UseraddNews />
-            </div>
+            </div> */}
 
             <div className='py-5' ref={newsRef} >
                 <News />
